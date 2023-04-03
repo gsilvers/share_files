@@ -1,0 +1,27 @@
+#+title: 20230403_m_miles_fb
+
+* Topic
+
+This is feedback from Mark Weller's coworker Mike on his code https://gitlab.com/michaelmiles/healthverity-r-demo. Normal + for positive - for negative / for just an observation.
+
+* Overall
+
+(+) Happy to see a full repo including the question. Reviewing these with missing data can be a pain. Document everything is a great policy.
+
+(-) Using box to generate and print these answer files is elegant code read wise but could be difficult for a user. A how to use this and how to view results could be helpful. I'm not saying remove this its cool, but sometimes a simple cat/print to the terminal is more expected.
+
+* Code
+
+(+) Good mid function and inline comments especially on type conversions like. https://gitlab.com/michaelmiles/healthverity-r-demo/-/blob/main/R/box/question_funs/question_funs.R#L97 this is easier to do in python with annotations but comments are a good analog.
+
+(+) Good to see the components broken down to smaller module/files ie the question functions.
+
+(+) Good naming, functions are verbs or have verbs.
+
+(/) Use of pipeline operators. Some people love some people hate it.
+
+(-) Assertions/Testing are done using main execution path code rather than something like pytest. It's probably not a big deal but having a way to run code outside of the code's main execution path for tests can be good. This is also comming from a more application development POV. Could be out of place for data engineering.
+
+* Summary
+
+This is really good code. It shows good time taking to understand the ask as well as well structured code. The code looks great. The only things I would improve would be read/usability. It would be good to make it clear to a newer R user how to run and parse the output of this system.
