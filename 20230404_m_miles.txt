@@ -1,0 +1,48 @@
+                           ━━━━━━━━━━━━━━━━━━
+                            20230404_M_MILES
+
+                            Greg Silverstein
+                           ━━━━━━━━━━━━━━━━━━
+
+
+
+1 Notes from Python Code
+════════════════════════
+
+1.1 Syntax / Structure
+──────────────────────
+
+  (-) In a few places like here
+  <https://gitlab.com/michaelmiles/healthverity-python-demo/-/blob/main/scripts/modules/mod/mod.py#L11>
+  we’re importing pandas locally in a function. This is valid you “can”
+  do it but its generally more accepted to simply import the dependency
+  at the top of the file once.
+
+  (+) looks like you understand pandas well even if you do not like it.
+
+  (+) while probably not required for something like this I appreciate
+  the split files/modules for the modification vs retrieval functions.
+
+  (/) not really needed for this kind of project but unlike R python has
+  some conventions about communicating types of function arguments. Here
+  for example
+  <https://gitlab.com/michaelmiles/healthverity-python-demo>/-/blob/main/scripts/modules/mod/mod.py#L30
+  its pretty unclear what type valid_procedure is. I can sort of infer
+  its a dataframe from the rest of the code but that’s not super clear
+  at first glance. Python allows for docstrings or basically a function
+  description string OR type annotation in the function definition to
+  make these more clear. Both are popular to use on bigger projects.
+  <https://docs.python.org/3/library/typing.html> or
+  <https://peps.python.org/pep-0257>/.
+
+
+1.2 Overall notes
+─────────────────
+
+  This is overall good code. Even though you’re not doing python day to
+  day you have Pandas down. A few tips on just syntax formalities but in
+  terms of how you broke down your code and are using pandas to answer
+  the questions it looks all good.
+
+  I’m not sure how that team will see the pytest thing but aside from
+  that I think it should be set.
